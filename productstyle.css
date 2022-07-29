@@ -1,0 +1,432 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* -------------------------------- */
+#header {
+  background-color: #ffffff;
+  padding: 40px;
+  border-bottom: 1px solid #000000;
+}
+
+#header h3 a {
+  font-family: Lobster;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 50px;
+  color: #109e97;
+  text-decoration: none;
+}
+
+#header h3 {
+  text-align: center;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: center;
+  background-color: #109e97;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  padding: 21px 48px;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto;
+  border: 1px solid #000000;
+}
+
+.nav-link {
+  border-right: 1px solid #ffffff;
+  transition: 0.2s;
+}
+
+.nav-link:first-child {
+  border-left: 1px solid #ffffff;
+}
+
+.nav-link:nth-child(4) {
+  background: #0e524e;
+  cursor: default;
+}
+
+.nav-link:hover {
+  background: #ffffff;
+  color: #109e97;
+}
+
+.nav-link:nth-child(4):hover {
+  color: #ffffff;
+  background: #0e524e;
+  cursor: default;
+}
+.nav-link:active {
+  background-color: #0e524e;
+  color: #ffffff;
+}
+
+#first-section {
+  position: relative;
+  margin: 100px auto;
+}
+
+#first-section,
+#second-section,
+#third-section {
+  width: 1100px;
+}
+
+#first-section .book-image {
+  width: 300px;
+  height: 450px;
+}
+
+#title {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+}
+
+#title h3 {
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  padding-bottom: 16px;
+}
+
+.newprice {
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 25px;
+  color: #008000;
+}
+
+.oldprice {
+  color: #ff0000;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#description {
+  position: absolute;
+  width: 718px;
+  right: 0px;
+  bottom: 0;
+  font-weight: 400;
+  font-family: Roboto;
+  text-align: right;
+}
+
+#description h3 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 15px;
+  font-weight: 800;
+}
+
+#description p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  padding-bottom: 18px;
+  overflow-y: scroll;
+  direction: rtl;
+}
+
+#description button {
+  width: 149px;
+  height: 48px;
+  background-color: #109e97;
+  border: 1px solid #109e97;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 23px;
+  transition: 0.1s;
+}
+
+#description button:hover,
+.submit-button:hover {
+  opacity: 0.5;
+}
+
+#description button:active,
+.submit-button:active {
+  opacity: 0.8;
+}
+
+#description button:focus,
+.submit-button:focus {
+  box-shadow: 0px 0px 10px #109e97;
+}
+
+#second-section {
+  margin: 0px auto;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+#second-section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+#second-section table {
+  width: 100%;
+}
+
+#second-section table td {
+  border-bottom: 1px solid #808080;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#second-section table td:nth-child(1),
+#second-section table td:nth-child(2) {
+  border-top: 1px solid #808080;
+}
+
+#third-section {
+  margin: 130px auto;
+  font-family: Roboto;
+  font-weight: 400;
+  position: relative;
+}
+
+#third-section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  padding-bottom: 17px;
+  font-weight: 800;
+}
+
+#third-section form {
+  text-align: center;
+}
+
+#third-section form .submit-button {
+  width: 91px;
+  height: 48px;
+  background-color: #109e97;
+  border: 1px solid #109e97;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: 0.1s;
+}
+
+#third-section .book-image-one,
+#third-section .book-image-two {
+  width: 300px;
+  height: 455px;
+}
+
+#third-section .book-image-one {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+#third-section .book-image-two {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-family: Roboto;
+  background-color: #109e97;
+  color: #ffffff;
+  border-top: 2px solid #000000;
+}
+
+#navbar {
+  position: fixed;
+  top: 300px;
+  right: 25px;
+}
+
+#navbar ul li a {
+  color: #ffffff;
+  background-color: #30999c;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#navbar ul li a.scroll-to-top {
+  background-color: #808080;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.scroll-to-top:hover {
+  background-color: #ffffff;
+  color: #30999c;
+  transition: 0.2s;
+}
+
+#navbar ul li a:focus {
+  opacity: 0.4;
+}
+
+textarea {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+textarea:hover {
+  opacity: 1;
+}
+
+#name__input:focus,
+#date__input:focus {
+  background-color: yellow;
+  transition: 0.3s;
+}
+
+#checkbox {
+  transition: 0.3s;
+}
+
+#checkbox:checked {
+  box-shadow: 0px 0px 20px;
+}
